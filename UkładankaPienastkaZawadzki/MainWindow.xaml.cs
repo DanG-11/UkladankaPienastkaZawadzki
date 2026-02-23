@@ -59,7 +59,7 @@ namespace UkładankaPienastkaZawadzki
             int row = Grid.GetRow(button);
             int col = Grid.GetColumn(button);
 
-            var emptySpace  = WhereIsEmptySpace();
+            var emptySpace = WhereIsEmptySpace();
 
             if (emptySpace.Row == row)
             {
