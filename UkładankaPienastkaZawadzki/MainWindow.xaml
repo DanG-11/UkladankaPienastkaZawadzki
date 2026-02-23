@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UkładankaPienastkaZawadzki"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
-    <Grid>
+    <Grid x:Name="MainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="2*"/>
@@ -20,19 +20,19 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Button x:Name="PierwszyBtn" Content="1" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="0"/>
-        <Button x:Name="JedenastyBtn" Content="11" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="1"/>
-        <Button x:Name="DziewiatyBtn" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="2"/>
-        <Button x:Name="TrzeciBtn" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="3"/>
-        <Button x:Name="DrugiBtn" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="0"/>
-        <Button x:Name="SiodmyBtn" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="1"/>
-        <Button x:Name="PietnastyBtn" Content="15" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="2"/>
-        <Button x:Name="TrzynastyBtn" Content="13" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="3"/>
-        <Button x:Name="OsmyBtn" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="0"/>
-        <Button x:Name="PiatyBtn" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="1"/>
-        <Button x:Name="DwunastyBtn" Content="12" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="2"/>
-        <Button x:Name="DziesatyBtn" Content="10" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="3"/>
-        <Button x:Name="CzternastyBtn" Content="14" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="1"/>
-        <Button x:Name="CzwartyBtn" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="2"/>
-        <Button x:Name="SzostyBtn" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="3"/>
+        <Button x:Name="JedenastyBtn" Content="11" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="1"/>
+        <Button x:Name="DziewiatyBtn" Content="9" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="2"/>
+        <Button x:Name="TrzeciBtn" Content="3" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="0" Grid.Row="3"/>
+        <Button x:Name="DrugiBtn" Content="2" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="0"/>
+        <Button x:Name="SiodmyBtn" Content="7" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="PietnastyBtn" Content="15" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="TrzynastyBtn" Content="13" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="1" Grid.Row="3"/>
+        <Button x:Name="OsmyBtn" Content="8" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="0"/>
+        <Button x:Name="PiatyBtn" Content="5" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="1"/>
+        <Button x:Name="DwunastyBtn" Content="12" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="2"/>
+        <Button x:Name="DziesatyBtn" Content="10" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="2" Grid.Row="3"/>
+        <Button x:Name="CzternastyBtn" Content="14" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="1"/>
+        <Button x:Name="CzwartyBtn" Content="4" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="2"/>
+        <Button x:Name="SzostyBtn" Content="6" Click="CheckForFreePlace_Click" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="-0.177,0.052" Height="76" Width="80" Grid.Column="3" Grid.Row="3"/>
     </Grid>
 </Window>
